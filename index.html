@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mon Portfolio | BTS SIO</title>
+    <meta name="description" content="Portfolio étudiant en BTS SIO : compétences, projets et parcours informatique.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#accueil" class="logo">&lt;Portfolio<span>/&gt;</span></a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#contact" class="nav-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Accueil -->
+        <section class="hero container" id="accueil">
+            <div class="hero-content">
+                <p class="eyebrow">Étudiant en BTS SIO</p>
+
+                <h1>Bonjour, je suis<br>
+                    <span class="gradient-text">Prénom Nom</span>
+                </h1>
+
+                <h2>Passionné par l'informatique et le numérique.</h2>
+
+                <p class="hero-description">
+                    Je développe mes compétences en informatique,
+                    en développement web et en systèmes numériques.
+                    Découvrez mon parcours et mes réalisations.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projets" class="btn btn-primary">Découvrir mes projets</a>
+                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
+                </div>
+
+                <div class="hero-socials">
+                    <a href="https://github.com/" target="_blank"
+                       rel="noopener noreferrer">GitHub ↗</a>
+                    <span>•</span>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="code-card">
+                    <div class="code-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="code-filename">portfolio.js</span>
+                    </div>
+
+                    <pre><code><span class="code-purple">const</span> <span class="code-blue">etudiant</span> = {
+  nom: <span class="code-green">"Prénom Nom"</span>,
+  formation: <span class="code-green">"BTS SIO"</span>,
+  passion: <span class="code-green">"Informatique"</span>,
+  motivation: <span class="code-green">"100%"</span>,
+  disponible: <span class="code-orange">true</span>
+};
+
+<span class="code-purple">function</span> <span class="code-blue">decouvrir</span>() {
+  <span class="code-purple">return</span> etudiant;
+}</code></pre>
+                </div>
+
+                <div class="floating-badge">💻 Portfolio en ligne</div>
+            </div>
+        </section>
+
+        <!-- À propos -->
+        <section class="section section-alt" id="apropos">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Qui suis-je ?</p>
+                    <h2>À propos de moi</h2>
+                    <p>Un aperçu de mon profil et de mes objectifs.</p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon">🎓</div>
+                        <h3>Ma formation</h3>
+                        <p>
+                            Je suis étudiant en BTS Services Informatiques
+                            aux Organisations. Cette formation me permet
+                            d'acquérir des compétences techniques et professionnelles.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">🚀</div>
+                        <h3>Mes objectifs</h3>
+                        <p>
+                            Approfondir mes connaissances, réaliser des projets
+                            concrets et développer mon expérience dans le domaine
+                            informatique.
+                        </p>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">🔎</div>
+                        <h3>Mes centres d'intérêt</h3>
+                        <p>
+                            Développement web, nouvelles technologies,
+                            programmation et résolution de problèmes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="section container" id="competences">
+            <div class="section-heading">
+                <p class="eyebrow">Mon savoir-faire</p>
+                <h2>Mes compétences</h2>
+                <p>Les technologies et outils que j'apprends et utilise.</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <span class="skill-icon">🌐</span>
+                    <h3>Développement web</h3>
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🐍</span>
+                    <h3>Programmation</h3>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Algorithmique</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🗄️</span>
+                    <h3>Bases de données</h3>
+                    <div class="tags">
+                        <span>SQL</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <span class="skill-icon">🖥️</span>
+                    <h3>Systèmes et réseaux</h3>
+                    <div class="tags">
+                        <span>Windows</span>
+                        <span>Linux</span>
+                        <span>Réseaux</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projets -->
+        <section class="section section-alt" id="projets">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Mes réalisations</p>
+                    <h2>Mes projets</h2>
+                    <p>Quelques exemples de projets scolaires et personnels.</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <div class="project-image project-image-one">
+                            <span>🌐</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-category">Développement web</p>
+                            <h3>Site vitrine</h3>
+                            <p>
+                                Création d'un site web responsive avec
+                                HTML et CSS pour présenter une activité.
+                            </p>
+                            <div class="tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+                            <a href="#" class="project-link">Voir le projet ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image project-image-two">
+                            <span>🐍</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-category">Programmation</p>
+                            <h3>Application Python</h3>
+                            <p>
+                                Développement d'une application permettant
+                                de gérer des données et automatiser des tâches.
+                            </p>
+                            <div class="tags">
+                                <span>Python</span>
+                                <span>Algorithmique</span>
+                            </div>
+                            <a href="#" class="project-link">Voir le projet ↗</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image project-image-three">
+                            <span>🗄️</span>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-category">Base de données</p>
+                            <h3>Gestion de données</h3>
+                            <p>
+                                Conception d'une base de données relationnelle
+                                et réalisation de requêtes SQL.
+                            </p>
+                            <div class="tags">
+                                <span>SQL</span>
+                                <span>MySQL</span>
+                            </div>
+                            <a href="#" class="project-link">Voir le projet ↗</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Parcours -->
+        <section class="section container" id="parcours">
+            <div class="section-heading">
+                <p class="eyebrow">Mon évolution</p>
+                <h2>Mon parcours</h2>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 – Aujourd'hui</div>
+                    <div class="timeline-content">
+                        <h3>BTS Services Informatiques aux Organisations</h3>
+                        <p>Nom de l'établissement – Ville</p>
+                        <p>
+                            Formation en développement, systèmes, réseaux
+                            et gestion de projets informatiques.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 – 2025</div>
+                    <div class="timeline-content">
+                        <h3>Baccalauréat</h3>
+                        <p>Nom de l'établissement – Ville</p>
+                        <p>Spécialités et enseignements suivis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-container">
+                <p>Consultez également mon CV pour en savoir plus.</p>
+                <a href="cv.pdf" class="btn btn-primary" target="_blank">
+                    Télécharger mon CV ↓
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section section-alt" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">Restons en contact</p>
+                    <h2>Me contacter</h2>
+                    <p>Une question ou une opportunité ? N'hésitez pas à me contacter.</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <h3>Mes coordonnées</h3>
+                        <p>📧 <a href="mailto:ton.email@example.com">ton.email@example.com</a></p>
+                        <p>💻 <a href="https://github.com/" target="_blank"
+                                  rel="noopener noreferrer">Mon GitHub</a></p>
+                    </div>
+
+                    <form id="contact-form">
+                        <label for="name">Nom</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Votre nom" required>
+
+                        <label for="email">Adresse e-mail</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="votre@email.com" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"
+                                  placeholder="Votre message..." required></textarea>
+
+                        <button type="submit" class="btn btn-primary">
+                            Préparer le message
+                        </button>
+
+                        <p id="form-status" class="form-status" aria-live="polite"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#accueil" class="logo">&lt;Portfolio<span>/&gt;</span></a>
+            <p>© <span id="year"></span> Prénom Nom – Portfolio BTS SIO</p>
+            <a href="#accueil">Retour en haut ↑</a>
+        </div>
+    </footer>
+
+</body>
+</html>
